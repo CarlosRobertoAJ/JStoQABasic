@@ -1,0 +1,145 @@
+/* Estilo base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e0e6ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    /* Imagem de sakura nas laterais */
+    background-image: url('images/sakura.png');
+    background-repeat: no-repeat;
+    background-position: left top, right top;
+    background-size: 500px 500px;
+    background-attachment: fixed;
+}
+
+/* Contêiner principal */
+#app {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #f7f9fc;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+small {
+    color: #7f8c8d;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Barra de busca */
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 8px;
+    border: 1px solid #bfc9d1;
+    border-radius: 4px;
+    width: 60%;
+}
+
+form button {
+    padding: 8px 12px;
+    border: 2px solid #34495e;
+    background-color: #2c3e50;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #34495e;
+}
+
+/* Galeria de fotos */
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  /* Grid responsivo */
+    gap: 20px;
+    justify-items: center;  /* Centraliza as imagens horizontalmente no grid */
+    align-items: center;    /* Centraliza as imagens verticalmente no grid */
+}
+
+/* Cartão de foto */
+.fotos #Item {
+    background-color: #f0f4f8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Imagem dentro do quadro */
+.fotos img {
+    width: 100%;  /* Garante que as imagens ocupem 100% do espaço disponível */
+    height: 200px;  /* Define uma altura fixa para as imagens */
+    object-fit: cover;  /* Faz com que a imagem preencha o contêiner sem distorção */
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 3px solid #ddd;
+    transition: border 0.3s ease;
+}
+
+/* Efeito de hover para a imagem (borda vermelha quando passar o mouse) */
+.fotos #Item:hover img {
+    border-color: #e63946;
+}
+
+.fotos p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Ícone de like */
+.material-symbols-outlined.like-icon {
+    font-size: 24px;
+    color: grey;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+/* Ícone de like clicado */
+.material-symbols-outlined.like-icon.liked {
+    color: red;
+}
+
+/* Ícone de delete */
+.material-symbols-outlined.delete-icon {
+    color: black;
+}
+
+/* Hover para os ícones */
+.material-symbols-outlined:hover {
+    opacity: 0.8;
+}

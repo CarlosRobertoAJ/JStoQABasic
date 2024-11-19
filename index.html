@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samurai Jack</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <small>Book de fotos do {{ userName }}</small>
+        
+        <!-- Formulário de busca -->
+        <form>
+            <input placeholder="busca por foto.." v-model="searchName" @input="filterFotos" />
+            <button type="button" @click="search()">Buscar</button>
+        </form>
+        
+        <!-- Lista de fotos -->
+        <div class="fotos">
+            <div id="Item" v-for="item in fotos" :key="item.id">
+                <img :src="item.avatar" :alt="item.nome" />
+                <p>{{ item.nome }}</p>
+                
+                <!-- Ícone de like -->
+                <span 
+                    @click="like(item)" 
+                    class="material-symbols-outlined like-icon" 
+                    :class="{ liked: item.liked }">
+                    favorite
+                </span>                
+                <!-- Ícone de delete -->
+                <span 
+                    @click="remove(item.id)" 
+                    class="material-symbols-outlined delete-icon">
+                    delete
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

@@ -1,51 +1,51 @@
-# JavaScript para QA - Projeto Básico
+# JavaScript for QA - Basic Project
 
-Este projeto demonstra a aplicação dos conceitos de JavaScript em Garantia de Qualidade (QA), com foco em automação e práticas fundamentais de testes. Foi projetado para ajudar a consolidar habilidades chave de JavaScript enquanto explora sua relevância no campo de QA.
+This project demonstrates the application of JavaScript concepts in Quality Assurance (QA), focusing on automation and fundamental testing practices. It is designed to help solidify key JavaScript skills while exploring their relevance in the QA field.
 
-## Visão Geral do Projeto
+## Project Overview
 
-Neste projeto, você encontrará exemplos básicos de como o JavaScript pode ser utilizado para automatizar testes, validar funcionalidades e melhorar o processo de testes dentro de um fluxo de trabalho de QA.
+In this project, you will find basic examples of how JavaScript can be leveraged for automating tests, validating functionalities, and improving the testing process within a QA workflow.
 
-## Funcionalidades
+## Features
 
-- **Funções em JavaScript**: Funções simples para cenários de automação de QA.
-- **Automação de Testes**: Demonstra como o JavaScript pode ser usado para automatizar o teste de aplicações web.
-- **Princípios Básicos de Testes**: Destaca os conceitos fundamentais de QA por meio de exemplos de código em JavaScript.
+- **JavaScript Functions**: Simple functions for QA automation scenarios.
+- **Test Automation**: Demonstrates how JavaScript can be used to automate the testing of web applications.
+- **Basic Testing Principles**: Highlights fundamental QA concepts through JavaScript code examples.
 
-## Ferramentas e Tecnologias
+## Tools and Technologies
 
-- **JavaScript (ES6+)**: A principal linguagem de programação usada neste projeto.
-- **Node.js**: Ambiente de execução para rodar JavaScript no lado servidor.
-- **Mocha** (Opcional): Framework de testes (caso usado no seu projeto).
-- **Chai** (Opcional): Biblioteca de asserções (caso usada no seu projeto).
+- **JavaScript (ES6+)**: The main programming language used for this project.
+- **Node.js**: Runtime environment for executing JavaScript server-side.
+- **Mocha** (Optional): Testing framework (if used in your project).
+- **Chai** (Optional): Assertion library (if used in your project).
 
-## Como Começar
+## Getting Started
 
-### Pré-requisitos
+### Prerequisites
 
-Antes de começar, certifique-se de ter os seguintes itens instalados:
+Before you begin, ensure you have the following installed:
 
-- [Node.js](https://nodejs.org/) (versão LTS recomendada)
-- Um editor de código (por exemplo, Visual Studio Code)
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- A code editor (e.g., Visual Studio Code)
 
-### Instalação
+### Installation
 
-1. Clone o repositório:
+1. Clone the repository:
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
+    git clone https://github.com/your-username/your-repository.git
     ```
-2. Acesse o diretório do projeto:
+2. Navigate into the project directory:
     ```bash
-    cd seu-repositorio
+    cd your-repository
     ```
-3. Instale as dependências (se houver):
+3. Install the dependencies (if any):
     ```bash
     npm install
     ```
 
-### Executando o Projeto
+### Running the Project
 
-Para rodar o código JavaScript, basta usar o Node.js:
+To run the JavaScript code, you can simply use Node.js:
 
 ```bash
 node index.js
